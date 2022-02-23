@@ -1,0 +1,32 @@
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0, user-scalable=no" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <h1>I can guess what finger you're holding up</h1>
+  <div id="container">
+      <canvas id="output" ></canvas>
+      <video id="video" playsinline ></video>
+  </div>
+
+  <!-- <div id = "buttons">
+    <button id="train">train</button>
+    <button id="classify">I guess this is</button>
+</div> -->
+
+  <h2>Here is my guess</h2>
+  <div id="array">log</div>
+
+  <!-- Require the peer dependencies of handpose. -->
+  <script src="https://unpkg.com/@tensorflow/tfjs-core@2.1.0/dist/tf-core.js"></script>
+  <script src="https://unpkg.com/@tensorflow/tfjs-converter@2.1.0/dist/tf-converter.js"></script>
+
+  <!-- You must explicitly require a TF.js backend if you're not using the tfs union bundle. -->
+  <script src="https://unpkg.com/@tensorflow/tfjs-backend-webgl@2.1.0/dist/tf-backend-webgl.js"></script>
+
+  <script src="https://unpkg.com/@tensorflow-models/handpose@0.0.6/dist/handpose.js"></script>
+
+  <script src="./js/app.js"></script>
+</body>
