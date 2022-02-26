@@ -19,9 +19,6 @@ let fingerLookupIndices = {
 
 let data;
 
-// let trainButton = document.getElementById("train");
-// let classifyButton = document.getElementById("classify");
-
 //
 // start de applicatie
 //
@@ -30,19 +27,7 @@ async function main() {
     const video = await setupCamera()
     video.play()
     startLandmarkDetection(video)
-
-//     trainButton.addEventListener("click", train);
-//     classifyButton.addEventListener("click", classify);
 }
-
-// function train() {
-//     console.log('You are now training..')
-// }
-
-// function classify() {
-//     console.log('I think this is')
-// }
-
 
 // start de webcam
 async function setupCamera() {
@@ -69,7 +54,6 @@ async function setupCamera() {
         }
     })
 }
-
 
 // predict de vinger posities in de video stream
 async function startLandmarkDetection(video) {
